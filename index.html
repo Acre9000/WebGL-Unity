@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Particulas</title>
+    <title>Unity WebGL Player | Android 2021</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=1920 height=1080 style="width: 1920px; height: 1080px; background: #231F20"></canvas>
-    <script src="Build/WebGL.loader.js"></script>
+    <script src="Build/WebGL-Unity.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,13 +25,13 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/WebGL.data",
-        frameworkUrl: "Build/WebGL.framework.js",
-        codeUrl: "Build/WebGL.wasm",
+        dataUrl: "Build/WebGL-Unity.data",
+        frameworkUrl: "Build/WebGL-Unity.framework.js",
+        codeUrl: "Build/WebGL-Unity.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "FreeChaos",
-        productName: "Particulas",
-        productVersion: "0.5",
+        companyName: "DefaultCompany",
+        productName: "Android 2021",
+        productVersion: "0.1.0",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
